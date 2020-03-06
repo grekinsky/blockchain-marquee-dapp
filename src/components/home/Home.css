@@ -1,0 +1,14 @@
+.currentSpace {
+    display: flex;
+    padding: 30px;
+    min-height: 200px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    text-align: center;
+}
+
+.emptySpace {
+    color: #ccc;
+}
