@@ -47,6 +47,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+Set `CONTRACT_ADDRESS` environment variable to use the deployed contract at the specified address instead of attempt to deploy a new instance.
+
+The deployed address in Ropsten test network is `0xE6899CF4225fB26B7BE7506E8f4428e2c1585880`.
+
 ### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**

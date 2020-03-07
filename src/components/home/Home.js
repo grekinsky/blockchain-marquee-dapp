@@ -54,7 +54,10 @@ class Home extends Component {
     async componentDidMount() {
         try {
             const { provider, account } = await web3();
-            const marqueeInstance = await Marquee(provider);
+            const marqueeInstance = await Marquee(
+                provider,
+                process.env.CONTRACT_ADDRESS,
+            );
             this.marqueeInstance = marqueeInstance;
             this.setState(
                 {
