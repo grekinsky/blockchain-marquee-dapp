@@ -15,13 +15,16 @@
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
+    "rimraf": "^3.0.2",
     "web3": "^1.2.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:contracts": "truffle compile && yarn contracts:sync-src",
+    "contracts:sync-src": "rimraf src/build/contracts && cp -R build/contracts/ src/build/contracts"
   },
   "eslintConfig": {
     "extends": "react-app"
